@@ -3,7 +3,8 @@
     <head>
         <title>Homepage</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script> 
     $(function(){
         $("#footer").load("footer.html");
          $("#nav").load("nav.html");
