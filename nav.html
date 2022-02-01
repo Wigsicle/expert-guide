@@ -1,0 +1,77 @@
+<header>
+    <a href="#" class="logo">GETCLIMATED</a>
+    <ul>
+    <li><a href="index.php">Home</a></li>
+        <li><a href="aboutus.php">About</a></li>
+        <li><a href="nuclear.php">Nuclear</a></li>
+        <li><a href="solar.php">Solar</a></li>
+        <li><a href="hydro.php">Hydro</a></li>
+        <li><a href="tidal.php">Tidal</a></li>
+        <li><a href="contactus.php">Contact</a></li>
+        <li><a href="faqs.php">FAQ</a></li>
+    </ul>
+</header>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+header
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.6);
+}
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 18px; 
+}
+header ul li a:hover ,
+header ul li a.active
+{
+    background: #fff;
+    color: #2b1055;
+}
+</style>

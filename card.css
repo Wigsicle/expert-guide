@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+#cardBody {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /*background*/
+    overflow: hidden;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 400px 300px;
+    grid-template-areas: "image" "text";
+
+    font-family: 'Poppins', sans-serif;
+    border-radius: 18px;
+    box-shadow: 5px 5px 15 rgba(0,0,0,0.9);
+    text-align: center;
+
+    transition: 0.25s ease;
+    cursor: pointer;
+}
+
+#RH {
+    background: rgba(24, 104, 174, 0.6)
+}
+
+#RA {
+    background: rgba(255,7,110, 0.60);
+}
+
+#AI {
+    background: rgba(243, 202, 32, 0.60);
+}
+#RP {
+    background: rgba(3, 172, 19, 0.60);
+}
+
+.card-image {
+    grid-area: image;
+    /*background:black;*/
+    border-top-left-radius:15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-text {
+    grid-area: text;
+    margin: 25px
+}
+.card-text .admNo {
+    /*color: rgb(255,7,110);*/
+    color: black;
+    font-size: 20px;
+}
+
+.card-text p {
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.card-text h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 28px;
+}
+
+.card-stats {
+    grid-area: stats;
+}
+
+.card:hover {
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+.container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+    background: url("https://images.pexels.com/photos/392056/pexels-photo-392056.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center;
+	background-size: cover;
+    filter: blur(50px);
+	z-index: -1;
+    transform: scale(1.1);
+}
